@@ -3,5 +3,5 @@ const UserController = require('../controller/User')
 const router = express.Router()
 
 router.get('/',UserController.getUsers)
-
+router.post('/',UserController.create)
 module.exports = router
